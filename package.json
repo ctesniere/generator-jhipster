@@ -25,15 +25,18 @@
     "url": "git://github.com/jhipster/generator-jhipster.git"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "yeoman-generator": "0.17.6",
+    "yeoman-generator": "0.21.0",
     "cheerio": "0.17.0",
     "underscore.string": "2.3.3",
     "shelljs": "0.3.0",
     "chalk": "0.5.1",
-    "grunt": "0.4.5"
+    "grunt": "1.0.0",
+    "snyk": "^1.105.0"
   },
   "devDependencies": {
     "grunt": "0.4.5",
@@ -50,5 +53,6 @@
     {
       "type": "Apache 2.0"
     }
-  ]
+  ],
+  "snyk": true
 }
